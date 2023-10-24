@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acordeão</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Resumo dos Filmes/Séries</h1>
+    <div class="secao">
+        <h3>Barbie</h3>
+        <div class="conteudo">
+            Antes mesmo de seu lançamento, o filme da Barbie fez um grande sucesso ao redor do mundo. 
+            Com um marketing eficaz e poderoso, a obra atraiu os olhares de muitas pessoas, que já se preparavam para assistir a película nos cinemas.
+            Além do seu elenco de peso, contando com Margot Robbie e Ryan Gosling, o filme é dirigido por Greta Gerwig, que coleciona grandes direções em sua carreira. 
+            A exemplo disso temos Adoráveis Mulheres e Lady Bird, que também fizeram muito sucesso em seus respectivos lançamentos.
+            Na narrativa, a protagonista Barbie começa a fazer questionamentos sobre o mundo que vive. 
+            Tudo isso surge logo após acontecer coisas incomuns com a boneca,
+             como seus pés se tornarem chatos e seus banhos matinais começarem a esfriar.
+             Aquilo, no mundo perfeito, era totalmente fora do normal.
+        </div>
+    </div>
+    <div class="secao">
+        <h3>GREY'S ANATOMY</h3>
+        <div class="conteudo">
+            Em Grey's Anatomy, os médicos do Grey Sloan Memorial Hospital/Seattle Grace Hospital lidam diariamente com casos de vida ou morte. 
+            É um no outro que eles encontram apoio, conforto, amizade e até mesmo amor. Juntos, eles se esforçam para conciliar os dramas profissionais com os pessoais, descobrindo que ambos podem – e vão – se misturar no meio do caminho. Entre os funcionários do local está Meredith Grey (Ellen Pompeo), filha de um cirurgião conceituado e recém-chegada ao programa de residência. 
+            Ela divide as preocupações do ofício com os internos Cristina Yang (Sandra Oh), Izzie Stevens (Katherine Heigl), Alex Karev (Justin Chambers) e George O'Malley (T. R. Knight). Todos passam pela supervisão de três renomados doutores: Miranda Bailey (Chandra Wilson), 
+            uma residente sênior que trabalha para ajudar Derek Shepherd (Patrick Dempsey), chefe de neurocirurgia e interesse amoroso de Grey; Preston Burke (Isaiah Washington), chefe do departamento de cardio e futuro noivo de Yang; e Richard Webber (James Pickens Jr.), chefe de cirurgia e cirurgião geral adjunto. 
+            Cada um deles luta para sobreviver em meio a longos expedientes e agitados treinamentos, dando o melhor de si nessa carreira tão importante quanto difícil.
+        </div>
+    </div>
+    <div class="secao">
+        <h3>The Walking Dead</h3>
+        <div class="conteudo">
+            The Walking Dead conta a história de um pequeno grupo de sobreviventes em um mundo pós-apocalíptico cheio de mortos-vivos. 
+            A série apresenta a excessiva jornada do grupo liderado por Rick Grimes, em busca de suprimentos e refúgios seguros.
+            Além disso, os sobreviventes têm que lidar com dilemas morais, 
+            sentimentos confusos e desafios do dia a dia em um mundo hostil e praticamente dominado por mortos-vivos.
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.secao .conteudo').hide();
+            $('.secao h3').click(function() {
+                $(this).next('.conteudo').slideToggle(); //aperte no nome das séries e dos filmes que irá aparecer o resumo de cada um
+            });
+        });
+    </script>
+</body>
+</html>
